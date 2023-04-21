@@ -13,10 +13,16 @@ public class Dialog extends JDialog {
         //this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         Container container = this.getContentPane();
-        //container.setLayout(null);
+        container.setLayout(null);
         //container.add(new Label("java学习测试"));
 
-        JLabel label=new JLabel("text test");
+
+
+
+
+
+
+        JLabel label=new JLabel("Nachts ist es kälter als Draußen!");
         container.add(label);
 
         //center text
