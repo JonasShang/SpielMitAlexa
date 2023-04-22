@@ -61,7 +61,7 @@ public class Login extends JFrame implements ActionListener {
                 //1.创建小窗口对象:（被监听的对象)
                 MyFrame myFrame = new MyFrame();
                 //设置窗口的宽高
-                myFrame.setBounds(300,200,1400,1000);
+                myFrame.setBounds(300,200,1300,1000);
                 //2.设置窗口显示
                 myFrame.setVisible(true);
                 tf3.setText("RICHTIG！！！");

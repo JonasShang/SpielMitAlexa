@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa29d529-1618-40fe-a39a-90d932485bec" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/demo/img/dresdner-frauenkirche.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/demo/img/icons8-kreis-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/demo/img/icons8-löschen-100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/demo/img/tic-tac-toe-hand-gezeichnetes-spiel.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/demo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/demo/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/demo/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/demo/MyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/demo/MyFrame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,11 +30,20 @@
       <file leaf-file-name="MyFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/demo/MyFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="667">
+              <caret line="110" column="11" lean-forward="true" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionListener.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/awt/event/ActionListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="47" column="37" lean-forward="true" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -57,8 +72,8 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+            <state relative-caret-position="-1026">
+              <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -66,8 +81,8 @@
       <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/demo/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="60" selection-start-line="60" selection-end-line="65" selection-end-column="41" />
+            <state relative-caret-position="266">
+              <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,6 +103,8 @@
     <findStrings>
       <find>MyDialogDemo</find>
       <find>add</find>
+      <find>ass.getResou</find>
+      <find>setSize</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,10 +116,10 @@
         <option value="$PROJECT_DIR$/src/com/demo/Dialog.java" />
         <option value="$PROJECT_DIR$/src/com/demo/Falsch.java" />
         <option value="$PROJECT_DIR$/src/com/demo/LoginConfirm.java" />
-        <option value="$PROJECT_DIR$/src/com/demo/Login.java" />
         <option value="$PROJECT_DIR$/src/com/demo/Frame/DrawGrid.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/demo/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/demo/Login.java" />
         <option value="$PROJECT_DIR$/src/com/demo/MyFrame.java" />
       </list>
     </option>
@@ -171,10 +188,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\JavaSpiel\src\com\demo\img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\JavaSpiel\src\com\demo\img" />
     </key>
@@ -230,12 +251,12 @@
       <option name="presentableId" value="Default" />
       <updated>1682114164348</updated>
       <workItem from="1682114167092" duration="10902000" />
-      <workItem from="1682160595250" duration="5500000" />
+      <workItem from="1682160595250" duration="11178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16402000" />
+    <option name="totallyTimeSpent" value="22080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
@@ -251,11 +272,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3297491" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.10215054" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3046595" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.13261649" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.1469534" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20566802" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18866397" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -321,12 +342,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/demo/Frame/DrawGrid.java" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/com/demo/img/dresdner-frauenkirche.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/demo/img/tic-tac-toe-hand-gezeichnetes-spiel.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/demo/img/schliessen.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/demo/img/kreis.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -340,16 +366,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/demo/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="60" selection-start-line="60" selection-end-line="65" selection-end-column="41" />
+        <state relative-caret-position="266">
+          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/demo/img/dresdner-frauenkirche.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/java/awt/event/ActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="47" column="37" lean-forward="true" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1026">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/demo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -360,8 +397,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/demo/MyFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="667">
+          <caret line="110" column="11" lean-forward="true" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

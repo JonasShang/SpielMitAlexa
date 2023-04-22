@@ -13,17 +13,21 @@ import java.util.Date;
  * Created by Zhixiang Shang on 21.04.2023.
  */
 public class MyFrame extends JFrame {
-    JButton b1=new JButton("1");
-    JButton b2=new JButton("2");
-    JButton b3=new JButton("3");
-    JButton b4=new JButton("4");
-    JButton b5=new JButton("5");
-    JButton b6=new JButton("6");
-    JButton b7=new JButton("7");
-    JButton b8=new JButton("8");
-    JButton b9=new JButton("9");
+    int clickCount = 0;
+    JButton b1=new JButton();
+    JButton b2=new JButton();
+    JButton b3=new JButton();
+    JButton b4=new JButton();
+    JButton b5=new JButton();
+    JButton b6=new JButton();
+    JButton b7=new JButton();
+    JButton b8=new JButton();
+    JButton b9=new JButton();
+    private int winTimes1 = 0;
+    private int winTimes2 = 0;
     Font f=new Font("Arial", Font.BOLD,30);
     Font timerFont=new Font("Arial", Font.BOLD,150);
+    Font SpielerFont=new Font("Arial", Font.BOLD,50);
     public MyFrame(){
         this.setVisible(true);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -33,46 +37,169 @@ public class MyFrame extends JFrame {
         this.setSize(300,500);
         this.setVisible(true);
     }
-    public void drawTextField(){
-        JTextField t1,t2;
-        t1=new JTextField("Welcome to Javatpoint.");
-        t1.setBounds(50,100, 200,30);
-        t2=new JTextField("AWT Tutorial");
-        t2.setBounds(50,150, 200,30);
-        this.add(t1); this.add(t2);
-    }
+
     public void drawGrid(){
         JLabel time = new JLabel();
-        JLabel inputLabel1 = new JLabel("输入");
-        JLabel inputLabel2 = new JLabel("输入");
-        this.add(time);
+        JLabel inputLabel1 = new JLabel("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>",JLabel.CENTER);
+        JLabel inputLabel2 = new JLabel("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>",JLabel.CENTER);
+
         this.add(inputLabel1);
+        this.add(time);
         this.add(inputLabel2);
 
         this.setTimer(time,1);
         time.setFont(timerFont);
+        inputLabel1.setFont(SpielerFont);
+        inputLabel2.setFont(SpielerFont);
         // adding buttons to the frame
+
         this.add(b1); this.add(b2); this.add(b3);
         this.add(b4); this.add(b5); this.add(b6);
         this.add(b7); this.add(b8); this.add(b9);
 
-        b1.setFont(f);
-        b2.setFont(f);
-        b3.setFont(f);
-        b4.setFont(f);
-        b5.setFont(f);
-        b6.setFont(f);
-        b7.setFont(f);
-        b8.setFont(f);
-        b9.setFont(f);
 
-        //A pop-up window pops up when the button is clicked
+//        b1.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-kreis-100.png")));
+//        b2.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-löschen-100.png")));
+
         b1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-//                this.setTimer(time,0);
-                //pop up
-                new Dialog();
+                clickCount++;
+                if(clickCount%2!=0){
+                    b1.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-kreis-100.png")));
+                    b1.setEnabled(false);
+                }else if(clickCount%2==0){
+                    b1.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-löschen-100.png")));
+                    b1.setEnabled(false);
+                }else{
+                    clickCount--;
+                    return;
+                }
+            }
+        });
+        b2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                clickCount++;
+                if(clickCount%2!=0){
+                    b2.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-kreis-100.png")));
+                    b2.setEnabled(false);
+                }else if(clickCount%2==0){
+                    b2.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-löschen-100.png")));
+                    b2.setEnabled(false);
+                }else{
+                    clickCount--;
+                    return;
+                }
+            }
+        });
+        b3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                clickCount++;
+                if(clickCount%2!=0){
+                    b3.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-kreis-100.png")));
+                    b3.setEnabled(false);
+                }else if(clickCount%2==0){
+                    b3.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-löschen-100.png")));
+                    b3.setEnabled(false);
+                }else{
+                    clickCount--;
+                    return;
+                }
+            }
+        });
+        b4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                clickCount++;
+                if(clickCount%2!=0){
+                    b4.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-kreis-100.png")));
+                    b4.setEnabled(false);
+                }else if(clickCount%2==0){
+                    b4.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-löschen-100.png")));
+                    b4.setEnabled(false);
+                }else{
+                    clickCount--;
+                    return;
+                }
+            }
+        });
+        b5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                clickCount++;
+                if(clickCount%2!=0){
+                    b5.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-kreis-100.png")));
+                    b5.setEnabled(false);
+                }else if(clickCount%2==0){
+                    b5.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-löschen-100.png")));
+                    b5.setEnabled(false);
+                }else{
+                    clickCount--;
+                    return;
+                }
+            }
+        });
+        b6.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                clickCount++;
+                if(clickCount%2!=0){
+                    b6.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-kreis-100.png")));
+                    b6.setEnabled(false);
+                }else if(clickCount%2==0){
+                    b6.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-löschen-100.png")));
+                    b6.setEnabled(false);
+                }else{
+                    clickCount--;
+                    return;
+                }
+            }
+        });
+        b7.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                clickCount++;
+                if(clickCount%2!=0){
+                    b7.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-kreis-100.png")));
+                    b7.setEnabled(false);
+                }else if(clickCount%2==0){
+                    b7.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-löschen-100.png")));
+                    b7.setEnabled(false);
+                }else{
+                    clickCount--;
+                    return;
+                }
+            }
+        });
+        b8.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                clickCount++;
+                if(clickCount%2!=0){
+                    b8.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-kreis-100.png")));
+                    b8.setEnabled(false);
+                }else if(clickCount%2==0){
+                    b8.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-löschen-100.png")));
+                    b8.setEnabled(false);
+                }else{
+                    clickCount--;
+                    return;
+                }
+            }
+        });
+        b9.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                clickCount++;
+                if(clickCount%2!=0){
+                    b9.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-kreis-100.png")));
+                    b9.setEnabled(false);
+                }else{
+                    b9.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-löschen-100.png")));
+                    b9.setEnabled(false);
+                }
             }
         });
     }
@@ -97,8 +224,9 @@ public class MyFrame extends JFrame {
 
     public void createWindow(){
         ImageIcon arrowIcon = null;
-        this.setTitle("Multimodale Benutzungsoberflächen Übung(TUD)");
-        java.net.URL imgURL = MyFrame.class.getResource("./img/dresdner-frauenkirche.png");
+        this.setTitle("   Multimodale Benutzungsoberflächen Übung(TUD)");
+//        java.net.URL imgURL = MyFrame.class.getResource("./img/dresdner-frauenkirche.png");
+        java.net.URL imgURL = MyFrame.class.getResource("./img/tic-tac-toe-hand-gezeichnetes-spiel.png");
         if (imgURL != null) {
             arrowIcon = new ImageIcon(imgURL);
             this.setIconImage(arrowIcon.getImage());
