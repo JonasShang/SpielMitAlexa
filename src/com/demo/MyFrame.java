@@ -26,29 +26,9 @@ public class MyFrame extends JFrame {
     Font timerFont=new Font("Arial", Font.BOLD,150);
     public MyFrame(){
         this.setVisible(true);
-//        this.setSize(1400,1000);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
-//        //JFrame put something, container
-//        Container container =this.getContentPane();
-//        //absolute layout
-//        container.setLayout(null);
-
-        // creating buttons
-//
-//        JButton c1 = new JButton("NORTH");; // the button will be labeled as NORTH
-//        JButton c2 = new JButton("SOUTH");; // the button will be labeled as SOUTH
-//        JButton c3 = new JButton("EAST");; // the button will be labeled as EAST
-//        JButton c4 = new JButton("WEST");; // the button will be labeled as WEST
-//        JButton c5 = new JButton("CENTER");; // the button will be labeled as CENTER
-//        this.add(c1, BorderLayout.NORTH); // b1 will be placed in the North Direction
-//        this.add(c2, BorderLayout.SOUTH);  // b2 will be placed in the South Direction
-//        this.add(c3, BorderLayout.EAST);  // b2 will be placed in the East Direction
-//        this.add(c4, BorderLayout.WEST);  // b2 will be placed in the West Direction
-//        this.add(c5, BorderLayout.CENTER);  // b2 will be placed in the Center
+        createWindow();
         drawGrid();
-//        drawGrid();
-//        drawTextField();
         this.setLayout(new GridLayout(4,3,5,5));
         this.setSize(300,500);
         this.setVisible(true);
@@ -76,11 +56,6 @@ public class MyFrame extends JFrame {
         this.add(b4); this.add(b5); this.add(b6);
         this.add(b7); this.add(b8); this.add(b9);
 
-        // setting the grid layout
-        // a 3 * 3 grid is created with the horizontal gap 20
-        // and vertical gap 25
-
-
         b1.setFont(f);
         b2.setFont(f);
         b3.setFont(f);
@@ -106,11 +81,8 @@ public class MyFrame extends JFrame {
         Timer timeAction = new Timer(1000, new ActionListener() {
             long timemillis2 = (System.currentTimeMillis()-1000);
             public void actionPerformed(ActionEvent e) {
-
                 long timemillis1 = System.currentTimeMillis();
-
                 long timemillis = timemillis1-timemillis2;
-
                 // 转换日期显示格式
                 SimpleDateFormat df = new SimpleDateFormat("mm:ss");
                 varTime.setText(df.format(new Date(timemillis)));
@@ -121,6 +93,19 @@ public class MyFrame extends JFrame {
         }else{
             timeAction.stop();
         }
+    }
+
+    public void createWindow(){
+        ImageIcon arrowIcon = null;
+        this.setTitle("Multimodale Benutzungsoberflächen Übung(TUD)");
+        java.net.URL imgURL = MyFrame.class.getResource("./img/dresdner-frauenkirche.png");
+        if (imgURL != null) {
+            arrowIcon = new ImageIcon(imgURL);
+            this.setIconImage(arrowIcon.getImage());
+        } else {
+            JOptionPane.showMessageDialog(this, "Icon image not found.");
+        }
 
     }
+
 }
