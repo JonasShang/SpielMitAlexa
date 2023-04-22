@@ -7,7 +7,7 @@ import java.awt.*;
  * Created by Zhixiang Shang on 22.04.2023.
  */
 public class Dialog extends JDialog {
-    public  Dialog(){
+    public  Dialog(String message){
         this.setVisible(true);
         this.setBounds(100,100,500,500);
         //this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -17,12 +17,7 @@ public class Dialog extends JDialog {
         //container.add(new Label("java学习测试"));
 
 
-
-
-
-
-
-        JLabel label=new JLabel("Nachts ist es kälter als Draußen!");
+        JLabel label=new JLabel(message);
         container.add(label);
 
         //center text
