@@ -67,6 +67,7 @@ public class Login extends JFrame implements ActionListener {
                 tf3.setText("RICHTIG！！！");
                 tf1.setText("");
                 tf2.setText("");
+                this.setVisible(false);
             }else{
 //            String result=String.valueOf(c);
                 tf3.setText("FAlSCH！！！");
