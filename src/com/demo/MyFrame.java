@@ -23,12 +23,15 @@ public class MyFrame extends JFrame {
     JButton b7=new JButton();
     JButton b8=new JButton();
     JButton b9=new JButton();
-    private int winTimes1 = 0;
-    private int winTimes2 = 0;
+    public int winTimes1 = 0;
+    public int winTimes2 = 0;
     public int buttonArr[][] = {{0,0,0},{0,0,0},{0,0,0}};
     Font f=new Font("Arial", Font.BOLD,30);
     Font timerFont=new Font("Arial", Font.BOLD,150);
     Font SpielerFont=new Font("Arial", Font.BOLD,50);
+    JLabel inputLabel1 = new JLabel("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>",JLabel.CENTER);
+    JLabel inputLabel2 = new JLabel("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>",JLabel.CENTER);
+
     public MyFrame(){
         this.setVisible(true);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -41,8 +44,6 @@ public class MyFrame extends JFrame {
 
     public void drawGrid(){
         JLabel time = new JLabel();
-        JLabel inputLabel1 = new JLabel("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>",JLabel.CENTER);
-        JLabel inputLabel2 = new JLabel("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>",JLabel.CENTER);
 
         this.add(inputLabel1);
         this.add(time);
@@ -93,6 +94,7 @@ public class MyFrame extends JFrame {
                 }
                 if(winnen(buttonArr)==1){
                     new Dialog("Spieler 1 hat gewonnen!!!");
+
                 }else if(winnen(buttonArr)==2){
                     new Dialog("Spieler 2 hat gewonnen!!!");
                 }else {
@@ -335,81 +337,113 @@ public class MyFrame extends JFrame {
             b1.setBackground(new Color(0xff, 0xdd, 0x00));
             b2.setBackground(new Color(0xff, 0xdd, 0x00));
             b3.setBackground(new Color(0xff, 0xdd, 0x00));
+            winTimes1++;
+            inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[1][0]==1 && b[1][1]==1 && b[1][2]==1){
             b4.setBackground(new Color(0xff, 0xdd, 0x00));
             b5.setBackground(new Color(0xff, 0xdd, 0x00));
             b6.setBackground(new Color(0xff, 0xdd, 0x00));
+            winTimes1++;
+            inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[2][0]==1 && b[2][1]==1 && b[2][2]==1){
             b7.setBackground(new Color(0xff, 0xdd, 0x00));
             b8.setBackground(new Color(0xff, 0xdd, 0x00));
             b9.setBackground(new Color(0xff, 0xdd, 0x00));
+            winTimes1++;
+            inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[0][0]==1 && b[1][0]==1 && b[2][0]==1){
             b1.setBackground(new Color(0xff, 0xdd, 0x00));
             b4.setBackground(new Color(0xff, 0xdd, 0x00));
             b7.setBackground(new Color(0xff, 0xdd, 0x00));
+            winTimes1++;
+            inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[0][1]==1 && b[1][1]==1 && b[2][1]==1){
             b2.setBackground(new Color(0xff, 0xdd, 0x00));
             b5.setBackground(new Color(0xff, 0xdd, 0x00));
             b8.setBackground(new Color(0xff, 0xdd, 0x00));
+            winTimes1++;
+            inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[0][2]==1 && b[1][2]==1 && b[2][2]==1){
             b3.setBackground(new Color(0xff, 0xdd, 0x00));
             b6.setBackground(new Color(0xff, 0xdd, 0x00));
             b9.setBackground(new Color(0xff, 0xdd, 0x00));
+            winTimes1++;
+            inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[0][0]==1 && b[1][1]==1 && b[2][2]==1){
             b1.setBackground(new Color(0xff, 0xdd, 0x00));
             b5.setBackground(new Color(0xff, 0xdd, 0x00));
             b9.setBackground(new Color(0xff, 0xdd, 0x00));
+            winTimes1++;
+            inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[0][2]==1 && b[1][1]==1 && b[2][0]==1){
             b3.setBackground(new Color(0xff, 0xdd, 0x00));
             b5.setBackground(new Color(0xff, 0xdd, 0x00));
             b7.setBackground(new Color(0xff, 0xdd, 0x00));
+            winTimes1++;
+            inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[0][0]==2 && b[0][1]==2 && b[0][2]==2){
             b1.setBackground(new Color(0xff, 0, 0x00));
             b2.setBackground(new Color(0xff, 0, 0x00));
             b3.setBackground(new Color(0xff, 0, 0x00));
+            winTimes2++;
+            inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }else if(b[1][0]==2 && b[1][1]==2 && b[1][2]==2){
             b4.setBackground(new Color(0xff, 0, 0x00));
             b5.setBackground(new Color(0xff, 0, 0x00));
             b6.setBackground(new Color(0xff, 0, 0x00));
+            winTimes2++;
+            inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }else if(b[2][0]==2 && b[2][1]==2 && b[2][2]==2){
             b7.setBackground(new Color(0xff, 0, 0x00));
             b8.setBackground(new Color(0xff, 0, 0x00));
             b9.setBackground(new Color(0xff, 0, 0x00));
+            winTimes2++;
+            inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }else if(b[0][0]==2 && b[1][0]==2 && b[2][0]==2){
             b1.setBackground(new Color(0xff, 0, 0x00));
             b4.setBackground(new Color(0xff, 0, 0x00));
             b7.setBackground(new Color(0xff, 0, 0x00));
+            winTimes2++;
+            inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }else if(b[0][1]==2 && b[1][1]==2 && b[2][1]==2){
             b2.setBackground(new Color(0xff, 0, 0x00));
             b5.setBackground(new Color(0xff, 0, 0x00));
             b8.setBackground(new Color(0xff, 0, 0x00));
+            winTimes2++;
+            inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }else if(b[0][2]==2 && b[1][2]==2 && b[2][2]==2){
             b3.setBackground(new Color(0xff, 0, 0x00));
             b6.setBackground(new Color(0xff, 0, 0x00));
             b9.setBackground(new Color(0xff, 0, 0x00));
+            winTimes2++;
+            inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }else if(b[0][0]==2 && b[1][1]==2 && b[2][2]==2){
             b1.setBackground(new Color(0xff, 0, 0x00));
             b5.setBackground(new Color(0xff, 0, 0x00));
             b9.setBackground(new Color(0xff, 0, 0x00));
+            winTimes2++;
+            inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }else if(b[0][2]==2 && b[1][1]==2 && b[2][0]==2){
             b3.setBackground(new Color(0xff, 0, 0x00));
             b5.setBackground(new Color(0xff, 0, 0x00));
             b7.setBackground(new Color(0xff, 0, 0x00));
+            winTimes2++;
+            inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }
         return 0;
