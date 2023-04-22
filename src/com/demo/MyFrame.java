@@ -43,7 +43,7 @@ public class MyFrame extends JFrame {
     }
 
     public void drawGrid(){
-        JLabel time = new JLabel();
+        JLabel time = new JLabel("",JLabel.CENTER);
 
         this.add(inputLabel1);
         this.add(time);

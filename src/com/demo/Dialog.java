@@ -11,9 +11,9 @@ import java.awt.event.ActionListener;
 public class Dialog extends JFrame implements ActionListener {
     public  Dialog(String message){
         this.setVisible(true);
-        this.setBounds(300,300,1200,1000);
+        this.setBounds(150,150,1200,1000);
 //        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        Font f=new Font("Arial", Font.BOLD,50);
+        Font f=new Font("Arial", Font.BOLD,30);
         Container container = this.getContentPane();
         container.setLayout(null);
         //container.add(new Label("java学习测试"));
@@ -22,14 +22,25 @@ public class Dialog extends JFrame implements ActionListener {
         System.out.println(message);
         JLabel label=new JLabel(message);
         label.setFont(f);
-        label.setBounds(5,5, 1000,900);
+        label.setBounds(0,0, 1000,900);
         container.add(label);
-
+        createWindow();
         //center text
         label.setHorizontalAlignment(SwingConstants.CENTER);
 
     }
-
+    public void createWindow(){
+        ImageIcon arrowIcon = null;
+        this.setTitle("   Multimodale Benutzungsoberflächen Übung(TUD)");
+//        java.net.URL imgURL = MyFrame.class.getResource("./img/dresdner-frauenkirche.png");
+        java.net.URL imgURL = MyFrame.class.getResource("./img/tic-tac-toe-hand-gezeichnetes-spiel.png");
+        if (imgURL != null) {
+            arrowIcon = new ImageIcon(imgURL);
+            this.setIconImage(arrowIcon.getImage());
+        } else {
+            JOptionPane.showMessageDialog(this, "Icon image not found.");
+        }
+    }
     @Override
     public void actionPerformed(ActionEvent e) {
 
