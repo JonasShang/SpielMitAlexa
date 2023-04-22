@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa29d529-1618-40fe-a39a-90d932485bec" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/demo/MyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/demo/MyFrame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +24,7 @@
       <file leaf-file-name="Dialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/demo/Dialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="-836">
               <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -34,13 +38,13 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/demo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="361">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -52,26 +56,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/demo/MyFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3458">
-              <caret line="507" column="21" selection-start-line="507" selection-start-column="21" selection-end-line="507" selection-end-column="21" />
+            <state relative-caret-position="19">
+              <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3022#3023#0" expanded="true" />
                 <element signature="e#3062#3063#0" expanded="true" />
-                <element signature="class#3850:4864" />
-                <element signature="class#4900:5914" />
-                <element signature="class#5950:6964" />
-                <element signature="class#7000:8014" />
-                <element signature="class#8050:9064" />
                 <element signature="class#9100:10114" />
                 <element signature="class#10150:11164" />
-                <element signature="class#11200:12109" />
-                <element signature="method#createWindow#0;class#MyFrame#0" />
-                <element signature="method#setNoClick#0;class#MyFrame#0" />
-                <element signature="method#winnen#0;class#MyFrame#0" />
               </folding>
             </state>
           </provider>
@@ -80,8 +75,8 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1216">
-              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+            <state relative-caret-position="-1140">
+              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -114,10 +109,11 @@
       <find>ass.getResou</find>
       <find>setSize</find>
       <find>buttonArr</find>
-      <find>winnen</find>
       <find>timerFont</find>
       <find>setTimer</find>
       <find>WINNING</find>
+      <find>winTimes2</find>
+      <find>winnen</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,8 +129,8 @@
         <option value="$PROJECT_DIR$/src/com/demo/Login.java" />
         <option value="$PROJECT_DIR$/src/com/demo/SoundEffect.java" />
         <option value="$PROJECT_DIR$/src/com/demo/Dialog.java" />
-        <option value="$PROJECT_DIR$/src/com/demo/MyFrame.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/com/demo/MyFrame.java" />
       </list>
     </option>
   </component>
@@ -255,12 +251,12 @@
       <option name="presentableId" value="Default" />
       <updated>1682114164348</updated>
       <workItem from="1682114167092" duration="10902000" />
-      <workItem from="1682160595250" duration="29495000" />
+      <workItem from="1682160595250" duration="31311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40397000" />
+    <option name="totallyTimeSpent" value="42213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
@@ -276,18 +272,18 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3297491" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45340502" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.12903225" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.22939068" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21538462" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21538462" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32795697" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -298,7 +294,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -330,17 +326,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#3022#3023#0" expanded="true" />
             <element signature="e#3062#3063#0" expanded="true" />
-            <element signature="class#3850:4864" />
-            <element signature="class#4900:5914" />
-            <element signature="class#5950:6964" />
-            <element signature="class#7000:8014" />
-            <element signature="class#8050:9064" />
             <element signature="class#9100:10114" />
             <element signature="class#10150:11164" />
-            <element signature="class#11200:12109" />
-            <element signature="method#createWindow#0;class#MyFrame#0" />
-            <element signature="method#setNoClick#0;class#MyFrame#0" />
-            <element signature="method#winnen#0;class#MyFrame#0" />
           </folding>
         </state>
       </provider>
@@ -360,13 +347,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/demo/img/kreis.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1216">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/demo/img/icons8-kreis-100.png">
       <provider selected="true" editor-type-id="images" />
@@ -403,15 +383,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/demo/Dialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1704#1705#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="95">
+            <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -425,43 +403,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1140">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/demo/Dialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-836">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1704#1705#0" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/demo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
+        <state relative-caret-position="361">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/demo/MyFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3458">
-          <caret line="507" column="21" selection-start-line="507" selection-start-column="21" selection-end-line="507" selection-end-column="21" />
+        <state relative-caret-position="19">
+          <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3022#3023#0" expanded="true" />
             <element signature="e#3062#3063#0" expanded="true" />
-            <element signature="class#3850:4864" />
-            <element signature="class#4900:5914" />
-            <element signature="class#5950:6964" />
-            <element signature="class#7000:8014" />
-            <element signature="class#8050:9064" />
             <element signature="class#9100:10114" />
             <element signature="class#10150:11164" />
-            <element signature="class#11200:12109" />
-            <element signature="method#createWindow#0;class#MyFrame#0" />
-            <element signature="method#setNoClick#0;class#MyFrame#0" />
-            <element signature="method#winnen#0;class#MyFrame#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="95">
-            <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>

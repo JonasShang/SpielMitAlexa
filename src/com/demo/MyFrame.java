@@ -101,10 +101,10 @@ public class MyFrame extends JFrame {
                     clickCount--;
                     return;
                 }
-                if(winnen(buttonArr)==1){
+                int ifwin = winnen((buttonArr));
+                if(ifwin==1){
                     new Dialog("Spieler 1 hat gewonnen!!!");
-
-                }else if(winnen(buttonArr)==2){
+                }else if(ifwin==2){
                     new Dialog("Spieler 2 hat gewonnen!!!");
                 }else {
                     System.out.println("noch nicht");
@@ -127,9 +127,10 @@ public class MyFrame extends JFrame {
                     clickCount--;
                     return;
                 }
-                if(winnen(buttonArr)==1){
+                int ifwin = winnen((buttonArr));
+                if(ifwin==1){
                     new Dialog("Spieler 1 hat gewonnen!!!");
-                }else if(winnen(buttonArr)==2){
+                }else if(ifwin==2){
                     new Dialog("Spieler 2 hat gewonnen!!!");
                 }else {
                     System.out.println("noch nicht");
@@ -152,9 +153,10 @@ public class MyFrame extends JFrame {
                     clickCount--;
                     return;
                 }
-                if(winnen(buttonArr)==1){
+                int ifwin = winnen((buttonArr));
+                if(ifwin==1){
                     new Dialog("Spieler 1 hat gewonnen!!!");
-                }else if(winnen(buttonArr)==2){
+                }else if(ifwin==2){
                     new Dialog("Spieler 2 hat gewonnen!!!");
                 }else {
                     System.out.println("noch nicht");
@@ -177,9 +179,10 @@ public class MyFrame extends JFrame {
                     clickCount--;
                     return;
                 }
-                if(winnen(buttonArr)==1){
+                int ifwin = winnen((buttonArr));
+                if(ifwin==1){
                     new Dialog("Spieler 1 hat gewonnen!!!");
-                }else if(winnen(buttonArr)==2){
+                }else if(ifwin==2){
                     new Dialog("Spieler 2 hat gewonnen!!!");
                 }else {
                     System.out.println("noch nicht");
@@ -202,9 +205,10 @@ public class MyFrame extends JFrame {
                     clickCount--;
                     return;
                 }
-                if(winnen(buttonArr)==1){
+                int ifwin = winnen((buttonArr));
+                if(ifwin==1){
                     new Dialog("Spieler 1 hat gewonnen!!!");
-                }else if(winnen(buttonArr)==2){
+                }else if(ifwin==2){
                     new Dialog("Spieler 2 hat gewonnen!!!");
                 }else {
                     System.out.println("noch nicht");
@@ -227,9 +231,10 @@ public class MyFrame extends JFrame {
                     clickCount--;
                     return;
                 }
-                if(winnen(buttonArr)==1){
+                int ifwin = winnen((buttonArr));
+                if(ifwin==1){
                     new Dialog("Spieler 1 hat gewonnen!!!");
-                }else if(winnen(buttonArr)==2){
+                }else if(ifwin==2){
                     new Dialog("Spieler 2 hat gewonnen!!!");
                 }else {
                     System.out.println("noch nicht");
@@ -252,9 +257,10 @@ public class MyFrame extends JFrame {
                     clickCount--;
                     return;
                 }
-                if(winnen(buttonArr)==1){
+                int ifwin = winnen((buttonArr));
+                if(ifwin==1){
                     new Dialog("Spieler 1 hat gewonnen!!!");
-                }else if(winnen(buttonArr)==2){
+                }else if(ifwin==2){
                     new Dialog("Spieler 2 hat gewonnen!!!");
                 }else {
                     System.out.println("noch nicht");
@@ -277,9 +283,10 @@ public class MyFrame extends JFrame {
                     clickCount--;
                     return;
                 }
-                if(winnen(buttonArr)==1){
+                int ifwin = winnen((buttonArr));
+                if(ifwin==1){
                     new Dialog("Spieler 1 hat gewonnen!!!");
-                }else if(winnen(buttonArr)==2){
+                }else if(ifwin==2){
                     new Dialog("Spieler 2 hat gewonnen!!!");
                 }else {
                     System.out.println("noch nicht");
@@ -299,9 +306,10 @@ public class MyFrame extends JFrame {
                     b9.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-löschen-100.png")));
                     b9.setEnabled(false);
                 }
-                if(winnen(buttonArr)==1){
+                int ifwin = winnen((buttonArr));
+                if(ifwin==1){
                     new Dialog("Spieler 1 hat gewonnen!!!");
-                }else if(winnen(buttonArr)==2){
+                }else if(ifwin==2){
                     new Dialog("Spieler 2 hat gewonnen!!!");
                 }else {
                     System.out.println("noch nicht");
