@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
 
 /**
  * Created by Zhixiang Shang on 22.04.2023.
@@ -48,26 +49,37 @@ public class Login extends JFrame implements ActionListener {
         container.add(breset);
 
         blogin.addActionListener(this);
+        bcancle.addActionListener(this);
+        breset.addActionListener(this);
     }
     public void actionPerformed(ActionEvent e) {
         String username = tf1.getText();
         String pwd = tf2.getText();
         System.out.println("username="+username+"pwd="+pwd);
-        if(username.equals("aaa")&& pwd.equals("123")){
-            //1.创建小窗口对象:（被监听的对象)
-            MyFrame myFrame = new MyFrame();
-            //设置窗口的宽高
-            myFrame.setBounds(300,200,1400,1000);
-            //2.设置窗口显示
-            myFrame.setVisible(true);
-            tf3.setText("RICHTIG！！！");
-            tf1.setText("");
-            tf2.setText("");
-        }else{
+        if(e.getSource()==blogin){
+            if(username.equals("aaa")&& pwd.equals("123")){
+                //1.创建小窗口对象:（被监听的对象)
+                MyFrame myFrame = new MyFrame();
+                //设置窗口的宽高
+                myFrame.setBounds(300,200,1400,1000);
+                //2.设置窗口显示
+                myFrame.setVisible(true);
+                tf3.setText("RICHTIG！！！");
+                tf1.setText("");
+                tf2.setText("");
+            }else{
 //            String result=String.valueOf(c);
-            tf3.setText("FAlSCH！！！");
+                tf3.setText("FAlSCH！！！");
+                tf1.setText("");
+                tf2.setText("");
+            }
+        }else if (e.getSource()==bcancle){
+            this.dispatchEvent(new WindowEvent(this,WindowEvent.WINDOW_CLOSING) );
+        }else if(e.getSource()==breset){
+            tf3.setText("");
             tf1.setText("");
             tf2.setText("");
         }
+
     }
 }
