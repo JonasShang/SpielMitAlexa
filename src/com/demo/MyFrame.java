@@ -43,8 +43,10 @@ public class MyFrame extends JFrame {
     }
 
     public void drawGrid(){
-        JLabel time = new JLabel("",JLabel.CENTER);
-
+//        JLabel time = new JLabel("",JLabel.CENTER);
+        JButton time = new JButton("");
+        time.setBackground(new Color(238, 238, 238));
+        time.setBorder(BorderFactory.createLineBorder(Color.white));
         this.add(inputLabel1);
         this.add(time);
         this.add(inputLabel2);
@@ -73,6 +75,13 @@ public class MyFrame extends JFrame {
 
 //        b1.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-kreis-100.png")));
 //        b2.setIcon(new ImageIcon(MyFrame.class.getResource("./img/icons8-löschen-100.png")));
+
+        time.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                playAgain();
+            }
+        });
 
         b1.addActionListener(new ActionListener() {
             @Override
@@ -300,8 +309,8 @@ public class MyFrame extends JFrame {
             }
         });
     }
-    public void setTimer(JLabel time,int status) {
-        final JLabel varTime = time;
+    public void setTimer(JButton time,int status) {
+        final JButton varTime = time;
         Timer timeAction = new Timer(1000, new ActionListener() {
             long timemillis2 = (System.currentTimeMillis()-1000);
             public void actionPerformed(ActionEvent e) {
@@ -331,122 +340,172 @@ public class MyFrame extends JFrame {
             JOptionPane.showMessageDialog(this, "Icon image not found.");
         }
     }
-
+    public void setNoClick(){
+        b1.setEnabled(false);
+        b2.setEnabled(false);
+        b3.setEnabled(false);
+        b4.setEnabled(false);
+        b5.setEnabled(false);
+        b6.setEnabled(false);
+        b7.setEnabled(false);
+        b8.setEnabled(false);
+        b9.setEnabled(false);
+    }
     public int winnen(int [][] b){
         if(b[0][0]==1 && b[0][1]==1 && b[0][2]==1){
             b1.setBackground(new Color(0xff, 0xdd, 0x00));
             b2.setBackground(new Color(0xff, 0xdd, 0x00));
             b3.setBackground(new Color(0xff, 0xdd, 0x00));
-            winTimes1++;
+            winTimes1++;setNoClick();
             inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[1][0]==1 && b[1][1]==1 && b[1][2]==1){
             b4.setBackground(new Color(0xff, 0xdd, 0x00));
             b5.setBackground(new Color(0xff, 0xdd, 0x00));
             b6.setBackground(new Color(0xff, 0xdd, 0x00));
-            winTimes1++;
+            winTimes1++;setNoClick();
             inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[2][0]==1 && b[2][1]==1 && b[2][2]==1){
             b7.setBackground(new Color(0xff, 0xdd, 0x00));
             b8.setBackground(new Color(0xff, 0xdd, 0x00));
             b9.setBackground(new Color(0xff, 0xdd, 0x00));
-            winTimes1++;
+            winTimes1++;setNoClick();
             inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[0][0]==1 && b[1][0]==1 && b[2][0]==1){
             b1.setBackground(new Color(0xff, 0xdd, 0x00));
             b4.setBackground(new Color(0xff, 0xdd, 0x00));
             b7.setBackground(new Color(0xff, 0xdd, 0x00));
-            winTimes1++;
+            winTimes1++;setNoClick();
             inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[0][1]==1 && b[1][1]==1 && b[2][1]==1){
             b2.setBackground(new Color(0xff, 0xdd, 0x00));
             b5.setBackground(new Color(0xff, 0xdd, 0x00));
             b8.setBackground(new Color(0xff, 0xdd, 0x00));
-            winTimes1++;
+            winTimes1++;setNoClick();
             inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[0][2]==1 && b[1][2]==1 && b[2][2]==1){
             b3.setBackground(new Color(0xff, 0xdd, 0x00));
             b6.setBackground(new Color(0xff, 0xdd, 0x00));
             b9.setBackground(new Color(0xff, 0xdd, 0x00));
-            winTimes1++;
+            winTimes1++;setNoClick();
             inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[0][0]==1 && b[1][1]==1 && b[2][2]==1){
             b1.setBackground(new Color(0xff, 0xdd, 0x00));
             b5.setBackground(new Color(0xff, 0xdd, 0x00));
             b9.setBackground(new Color(0xff, 0xdd, 0x00));
-            winTimes1++;
+            winTimes1++;setNoClick();
             inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[0][2]==1 && b[1][1]==1 && b[2][0]==1){
             b3.setBackground(new Color(0xff, 0xdd, 0x00));
             b5.setBackground(new Color(0xff, 0xdd, 0x00));
             b7.setBackground(new Color(0xff, 0xdd, 0x00));
-            winTimes1++;
+            winTimes1++;setNoClick();
             inputLabel1.setText("<html><body>"+"Spieler 1"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes1+"<body></html>");
             return 1;
         }else if(b[0][0]==2 && b[0][1]==2 && b[0][2]==2){
             b1.setBackground(new Color(0xff, 0, 0x00));
             b2.setBackground(new Color(0xff, 0, 0x00));
             b3.setBackground(new Color(0xff, 0, 0x00));
-            winTimes2++;
+            winTimes2++;setNoClick();
             inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }else if(b[1][0]==2 && b[1][1]==2 && b[1][2]==2){
             b4.setBackground(new Color(0xff, 0, 0x00));
             b5.setBackground(new Color(0xff, 0, 0x00));
             b6.setBackground(new Color(0xff, 0, 0x00));
-            winTimes2++;
+            winTimes2++;setNoClick();
             inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }else if(b[2][0]==2 && b[2][1]==2 && b[2][2]==2){
             b7.setBackground(new Color(0xff, 0, 0x00));
             b8.setBackground(new Color(0xff, 0, 0x00));
             b9.setBackground(new Color(0xff, 0, 0x00));
-            winTimes2++;
+            winTimes2++;setNoClick();
             inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }else if(b[0][0]==2 && b[1][0]==2 && b[2][0]==2){
             b1.setBackground(new Color(0xff, 0, 0x00));
             b4.setBackground(new Color(0xff, 0, 0x00));
             b7.setBackground(new Color(0xff, 0, 0x00));
-            winTimes2++;
+            winTimes2++;setNoClick();
             inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }else if(b[0][1]==2 && b[1][1]==2 && b[2][1]==2){
             b2.setBackground(new Color(0xff, 0, 0x00));
             b5.setBackground(new Color(0xff, 0, 0x00));
             b8.setBackground(new Color(0xff, 0, 0x00));
-            winTimes2++;
+            winTimes2++;setNoClick();
             inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }else if(b[0][2]==2 && b[1][2]==2 && b[2][2]==2){
             b3.setBackground(new Color(0xff, 0, 0x00));
             b6.setBackground(new Color(0xff, 0, 0x00));
             b9.setBackground(new Color(0xff, 0, 0x00));
-            winTimes2++;
+            winTimes2++;setNoClick();
             inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }else if(b[0][0]==2 && b[1][1]==2 && b[2][2]==2){
             b1.setBackground(new Color(0xff, 0, 0x00));
             b5.setBackground(new Color(0xff, 0, 0x00));
             b9.setBackground(new Color(0xff, 0, 0x00));
-            winTimes2++;
+            winTimes2++;setNoClick();
             inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }else if(b[0][2]==2 && b[1][1]==2 && b[2][0]==2){
             b3.setBackground(new Color(0xff, 0, 0x00));
             b5.setBackground(new Color(0xff, 0, 0x00));
             b7.setBackground(new Color(0xff, 0, 0x00));
-            winTimes2++;
+            winTimes2++;setNoClick();
             inputLabel2.setText("<html><body>"+"Spieler 2"+"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+winTimes2+"<body></html>");
             return 2;
         }
         return 0;
+    }
+    public void playAgain(){
+        b1.setEnabled(true);
+        b2.setEnabled(true);
+        b3.setEnabled(true);
+        b4.setEnabled(true);
+        b5.setEnabled(true);
+        b6.setEnabled(true);
+        b7.setEnabled(true);
+        b8.setEnabled(true);
+        b9.setEnabled(true);
+
+        b1.setIcon(new ImageIcon(MyFrame.class.getResource("")));
+        b2.setIcon(new ImageIcon(MyFrame.class.getResource("")));
+        b3.setIcon(new ImageIcon(MyFrame.class.getResource("")));
+        b4.setIcon(new ImageIcon(MyFrame.class.getResource("")));
+        b5.setIcon(new ImageIcon(MyFrame.class.getResource("")));
+        b6.setIcon(new ImageIcon(MyFrame.class.getResource("")));
+        b7.setIcon(new ImageIcon(MyFrame.class.getResource("")));
+        b8.setIcon(new ImageIcon(MyFrame.class.getResource("")));
+        b9.setIcon(new ImageIcon(MyFrame.class.getResource("")));
+
+        b1.setBackground(new Color(255,255,255));
+        b2.setBackground(new Color(255,255,255));
+        b3.setBackground(new Color(255,255,255));
+        b4.setBackground(new Color(255,255,255));
+        b5.setBackground(new Color(255,255,255));
+        b6.setBackground(new Color(255,255,255));
+        b7.setBackground(new Color(255,255,255));
+        b8.setBackground(new Color(255,255,255));
+        b9.setBackground(new Color(255,255,255));
+
+        int i,j;
+        for(i=0;i<=2;i++){
+            for(j=0;j<=2;j++){
+                buttonArr[i][j]=0;
+            }
+        }
+
+        clickCount=0;
     }
 
 }
