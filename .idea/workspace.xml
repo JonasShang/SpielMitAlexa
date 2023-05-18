@@ -4,76 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa29d529-1618-40fe-a39a-90d932485bec" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/alexa/HelloWorldStreamHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/alexa/handlers/CancelandStopIntentHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/alexa/handlers/FallbackIntentHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/alexa/handlers/HelloWorldIntentHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/alexa/handlers/HelpIntentHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/alexa/handlers/LaunchRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/alexa/handlers/SessionEndedRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/helloworld/MySkillStreamHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/helloworld/handlers/CancelAndStopIntentHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/helloworld/handlers/HelloWorldIntentHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/helloworld/handlers/HelpIntentHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/helloworld/handlers/LaunchRequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/helloworld/handlers/SessionEndedRequestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSpiel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSpiel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/Dialog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/MyFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/img/dresdner-frauenkirche.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/img/icons8-kreis-100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/img/icons8-löschen-100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/img/tic-tac-toe-hand-gezeichnetes-spiel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/sound/buttonclick.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/sound/click.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/sound/draw.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/sound/help.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/sound/lose.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/sound/start.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/sound/warn.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/sound/win.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaSpiel/com/demo/sound/winner.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/Dialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/MyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/MyFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/img/dresdner-frauenkirche.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/dresdner-frauenkirche.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/img/icons8-kreis-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/icons8-kreis-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/img/icons8-löschen-100.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/icons8-löschen-100.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/img/tic-tac-toe-hand-gezeichnetes-spiel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/tic-tac-toe-hand-gezeichnetes-spiel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/sound/buttonclick.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sound/buttonclick.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/sound/click.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sound/click.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/sound/draw.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sound/draw.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/sound/help.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sound/help.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/sound/lose.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sound/lose.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/sound/start.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sound/start.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/sound/warn.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sound/warn.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/sound/win.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sound/win.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/demo/sound/winner.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sound/winner.mp3" afterDir="false" />
-    </list>
+    <list default="true" id="fa29d529-1618-40fe-a39a-90d932485bec" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -284,7 +215,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "vcs.Git",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -366,7 +297,7 @@
       <workItem from="1684244135344" duration="1748000" />
       <workItem from="1684307443653" duration="2120000" />
       <workItem from="1684314690224" duration="1408000" />
-      <workItem from="1684317056764" duration="15384000" />
+      <workItem from="1684317056764" duration="15748000" />
     </task>
     <servers />
   </component>
